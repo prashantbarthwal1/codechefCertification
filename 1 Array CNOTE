@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    
+    while(t--)
+{
+      int X,Y,K,N;
+      cin>>X>>Y>>K>>N;
+      X=X-Y;bool flag=false;
+      int *a=NULL,*b=NULL;
+      a=new int[N];
+      b=new int[N];
+      for(int i=0;i<N;i++)
+        cin>>a[i]>>b[i];
+        
+          for(int i=0;i<N;i++)
+        {
+            if(a[i]>=X && b[i]<=K)
+            {
+                 flag=true;
+                 break;
+                
+            }
+              
+            
+        }
+        if(flag==true)
+        cout<<"LuckyChef"<<endl;
+        else
+        cout<<"UnluckyChef"<<endl;
+        
+    
+    
+
+
+    
+}
+
+
+	return 0;
+}
